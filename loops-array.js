@@ -55,6 +55,9 @@ while (i <= 1000) {
 
 // Loop da loops
 
+// 10. Generera en kortlek med 52 kort där varje kort innehåller en färg ( suite ) och ett värde mellan 2 och 14 ( ess ). Ex.
+// [..., 'hjärter 8', 'hjärter 9', ...]
+
 // 11. Loopa ut samtliga vänners favoritfrukter med en console.log().
 let friends = [
     {
