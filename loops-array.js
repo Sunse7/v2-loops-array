@@ -24,14 +24,66 @@ for (let i = 0; i < fruits.length; i++) {
 
 // For of loops
 
-let things = ['hammer', 'nails', 'ruler', 'screwdriver', 'screws', 'saw'];
 // 6. Loopa ut ovanstående array och console.log() varje pryl.
+let things = ['hammer', 'nails', 'ruler', 'screwdriver', 'screws', 'saw'];
+for (let i of things) {
+    console.log(i);
+}
 
 
 // For Each loops
+
 // 7. Loopa ut ovanstående array och console.log() varje pryl.
+things.forEach(item  => {
+    console.log(item);
+});
 // 8. Loopa ut ovanstående array och console.log() varje pryl samt vilken position i arrayen den har.
+things.forEach((item, index) => {
+    console.log(index, item);
+});
 
 
 // While loops
+
 // 9. Skapa en while-loop som kör 1000 varv. console.log() ut varje varv.
+let i = 0;
+while (i <= 1000) {
+    console.log(i);
+    i++;
+}
+
+
+// Loop da loops
+
+// 11. Loopa ut samtliga vänners favoritfrukter med en console.log().
+let friends = [
+    {
+        name: 'Sixten',
+        likes: [
+            'bananas',
+            'strawberries',
+            'blueberries'
+        ]
+    },
+    {
+        name: 'Khalid',
+        likes: [
+            'papaya',
+            'pear',
+            'pineapple'
+        ]
+    },
+    {
+        name: 'Lisa',
+        likes: [
+            'raspberries',
+            'watermelon',
+            'apple'
+        ]
+    }
+]
+
+for (let i = 0; i < friends.length; i++) {
+    // console.log(friends[i].likes.toString());
+    console.log(`${friends[i].name} likes: ${friends[i].likes.toString()}`);
+}
